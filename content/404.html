@@ -1,7 +1,9 @@
 ---
 title: "Page not found"
 layout: page
-description: "That page does not exist."
+heading: "Page not found"
+description: "Sorry, the page you were looking for is not here. Head back to the Mt Eliza Dental Centre home page or contact us."
+cta: false
 sitemap: false
 robots: "noindex"
 # GitHub Pages serves a custom 404 only from a file called 404.html at the root
@@ -10,4 +12,4 @@ robots: "noindex"
 # own grey screen instead of the site's.
 link: /404.html
 ---
-<p>Sorry, we could not find that page. <a href="{=site.url}">Go to the home page</a>.</p>
+<p>Sorry, we could not find that page. <a href="{=site.url}">Go to the home page</a> or <a href="{=site.url('contact')}">contact us</a>.</p>

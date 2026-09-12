@@ -2,15 +2,34 @@
 <header class="site-header">
   <div class="container bar">
     <a class="brand" href="{=site.url}">
-      <!-- BUILDER: replace with the logo image (public/images/logo.*) or a wordmark -->
-      <span class="brand-name">Mt Eliza Dental Centre</span>
+      <img src="{=site.url('images/logo.png')}" alt="Mt Eliza Dental Centre home" width="300" height="84">
     </a>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle menu">
     <label for="nav-toggle" class="nav-toggle"><span></span></label>
     <nav class="site-nav" aria-label="Main navigation">
       <ul>
-        <!-- BUILDER: one <li> per page, mirroring the original site's navigation -->
         <li><a href="{=site.url}">Home</a></li>
+        <li><a href="{=site.url('about')}">About</a>
+          <ul>
+            <li><a href="{=site.url('our-team')}">Our Team</a></li>
+            <li><a href="{=site.url('our-technology')}">Our Technology</a></li>
+          </ul>
+        </li>
+        <li><a href="{=site.url('general-dentistry')}">Treatments</a>
+          <ul>
+            <li><a href="{=site.url('general-dentistry')}">General Dentistry</a></li>
+            <li><a href="{=site.url('tmj-bruxism')}">TMJ &amp; Bruxism</a></li>
+            <li><a href="{=site.url('braces-invisalign')}">Braces / Invisalign</a></li>
+            <li><a href="{=site.url('whitening')}">Whitening</a></li>
+            <li><a href="{=site.url('veneers')}">Veneers</a></li>
+            <li><a href="{=site.url('crowns-bridges')}">Crowns &amp; Bridges</a></li>
+            <li><a href="{=site.url('dentures')}">Dentures</a></li>
+            <li><a href="{=site.url('gum-disease')}">Gum Disease</a></li>
+            <li><a href="{=site.url('implants')}">Implants</a></li>
+          </ul>
+        </li>
+        <li><a href="{=site.url('contact')}">Contact Us</a></li>
+        <li><a class="btn-book" href="{=site.url('contact')}">Book an appointment</a></li>
       </ul>
     </nav>
   </div>

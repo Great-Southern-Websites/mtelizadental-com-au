@@ -1,12 +1,29 @@
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
 <footer class="site-footer">
   <div class="container footer-grid">
-    <div>
+    <div class="footer-contact">
       <p class="footer-brand">Mt Eliza Dental Centre</p>
-      <!-- BUILDER: address, phone, email, hours from the original site -->
+      <p>Serving the needs of patients across the peninsula since 1993.</p>
+      <p><a href="https://www.google.com/maps/search/?api=1&amp;query=87+Canadian+Bay+Road+Mt+Eliza+VIC+3930">87 Canadian Bay Road, Mt Eliza VIC 3930</a></p>
+      <p>Phone: <a href="tel:+61397873355">(03) 9787 3355</a></p>
+      <p>Emergency 24/7: <a href="tel:1800833039">1800 833 039</a></p>
+      <p><a href="mailto:reception@mtelizadental.com.au">reception@mtelizadental.com.au</a></p>
     </div>
     <div>
-      <!-- BUILDER: footer navigation -->
+      <h2>Hours</h2>
+      {#include partials/hours /}
+    </div>
+    <div>
+      <h2>Quick links</h2>
+      <ul>
+        <li><a href="{=site.url('contact')}">Book an appointment</a></li>
+        <li><a href="{=site.url('contact')}">Contact Us</a></li>
+        <li><a href="{=site.url('about')}">About</a></li>
+        <li><a href="{=site.url('our-team')}">Our Team</a></li>
+        <li><a href="{=site.url('general-dentistry')}">General Dentistry</a></li>
+        <li><a href="https://www.facebook.com/MtElizaDentalCentre/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/mtelizadentalcentre/">Instagram</a></li>
+      </ul>
     </div>
   </div>
   <div class="container footer-bottom">

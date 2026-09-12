@@ -1,35 +1,34 @@
 {@io.quarkiverse.roq.frontmatter.runtime.model.Site site}
-<!-- Structured data for search engines (schema.org). BUILDER: fill every field
-     from the business's own details; delete keys you have no real value for.
-     Keep it accurate when contact details, hours or locations change. -->
+<!-- Structured data for search engines (schema.org). Keep it accurate when
+     contact details or hours change. -->
 <script type="application/ld+json">
 {|{
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Dentist",
   "@id": "|}{=site.url.absolute}{|#business",
   "name": "Mt Eliza Dental Centre",
   "url": "|}{=site.url.absolute}{|",
   "logo": "|}{=site.url('images/logo.png').absolute}{|",
-  "image": "|}{=site.url('images/logo.png').absolute}{|",
-  "description": "BUILDER: one sentence, the same as the home page description.",
-  "telephone": "+61 3 0000 0000",
-  "email": "hello@example.com",
+  "image": "|}{=site.url('images/reception.jpg').absolute}{|",
+  "description": "Mt Eliza Dental Centre has cared for patients across the peninsula since 1993, with general, cosmetic and restorative dentistry in one place.",
+  "telephone": "+61 3 9787 3355",
+  "email": "reception@mtelizadental.com.au",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1 Example Street",
-    "addressLocality": "Suburb",
+    "streetAddress": "87 Canadian Bay Road",
+    "addressLocality": "Mt Eliza",
     "addressRegion": "VIC",
-    "postalCode": "3000",
+    "postalCode": "3930",
     "addressCountry": "AU"
   },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "17:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Thursday"], "opens": "08:00", "closes": "17:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "08:00", "closes": "18:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "09:00", "closes": "17:00" }
   ],
-  "sameAs": [],
-  "potentialAction": {
-    "@type": "ReserveAction",
-    "name": "Book",
-    "target": "|}{=site.url('contact').absolute}{|"
-  }
+  "sameAs": [
+    "https://www.facebook.com/MtElizaDentalCentre/",
+    "https://www.instagram.com/mtelizadentalcentre/"
+  ]
 }|}
 </script>
