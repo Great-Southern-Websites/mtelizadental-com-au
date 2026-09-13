@@ -10,6 +10,7 @@
   --primary-deep: #1F5A31;
   --accent: #65BC7B;
   --accent-ink: #0E2A16;
+  --logo-green: #AEBD36;
   --link: #2E7A44;
   --bg: #FFFFFF;
   --bg-alt: #F2F8F3;
@@ -114,7 +115,7 @@ p { margin: 0 0 1rem; }
 .btn-outline { border-color: var(--link); color: var(--link); background: transparent; }
 .btn-light { background: #FFFFFF; color: var(--primary-deep); }
 .btn-light:hover { background: var(--bg-alt); color: var(--primary-deep); }
-.hero .btn-outline { border-color: #FFFFFF; color: #FFFFFF; }
+.hero .btn-outline { border-color: var(--accent-ink); color: var(--accent-ink); }
 .hero .btn-outline:hover { background: #FFFFFF; color: var(--primary-deep); }
 .btn-outline:hover { background: var(--primary); color: var(--on-primary); }
 
@@ -165,7 +166,7 @@ p { margin: 0 0 1rem; }
 }
 
 /* ---- hero + banners ------------------------------------------------------ */
-.hero { background: var(--primary); color: var(--on-primary); padding-block: clamp(3rem, 9vw, 6.5rem); }
+.hero { background: var(--logo-green); color: var(--accent-ink); padding-block: clamp(3rem, 9vw, 6.5rem); }
 .hero h1, .hero .lead { color: inherit; }
 .hero .lead { opacity: 0.92; }
 .hero-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
