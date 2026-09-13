@@ -125,6 +125,15 @@ p { margin: 0 0 1rem; }
 .brand { background: #FFFFFF; border-radius: 10px; padding: 0.3rem 0.5rem; }
 .brand img { height: 2.75rem; width: auto; }
 @media (max-width: 380px) { .brand img { height: 2.3rem; } }
+.brand .logo-dark { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .brand { background: transparent; }
+  :root:not([data-theme="light"]) .brand .logo-light { display: none; }
+  :root:not([data-theme="light"]) .brand .logo-dark { display: block; }
+}
+:root[data-theme="dark"] .brand { background: transparent; }
+:root[data-theme="dark"] .brand .logo-light { display: none; }
+:root[data-theme="dark"] .brand .logo-dark { display: block; }
 .nav-toggle-input { position: absolute; opacity: 0; width: 0; height: 0; }
 .nav-toggle { display: flex; align-items: center; justify-content: center; width: 2.9rem; height: 2.9rem; border-radius: 10px; border: 1px solid var(--line); cursor: pointer; }
 .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after { display: block; width: 1.3rem; height: 2px; background: var(--fg); position: relative; transition: transform 0.2s; content: ""; }
